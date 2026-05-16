@@ -110,10 +110,11 @@ body {
 
 }
 
-.g-container {
+.f-container {
     width: 100%;
     display: flex;
     padding: 2% 5%;
+    justify-content: center;
 }
 
 .sm-img {
@@ -152,4 +153,32 @@ body {
     text-align: center;
     margin-top: 1%;
     margin-bottom: 1%;
+}
+@media (max-width: 725px){
+    .top-buttons{
+        display: none;
+    }
+    .hero-g{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-g{
+        display: flex;
+        flex-direction: column;
+    }
+    .read-more-bt{
+        margin-bottom: 4%;
+    }
+    .f-container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 5%;
+    }
+    .sm-img{
+        width: 100%;
+        height: auto;
+    }
+    .attribution{
+        margin-top: 3rem;
+    }
 }
