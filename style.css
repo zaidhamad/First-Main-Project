@@ -1,0 +1,154 @@
+:root {
+    --softorange: hsl(35, 77%, 62%);
+    --softred: hsl(5, 85%, 63%);
+    --offwhite: hsl(36, 100%, 99%);
+    --gblue: hsl(233, 8%, 79%);
+    --dblue: hsl(236, 13%, 42%);
+    --vdblue: hsl(240, 100%, 5%)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--offwhite);
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+.top-buttons {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.hero-g {
+    display: grid;
+    padding: 2% 5%;
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    gap: 4%;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    grid-column: 1/3;
+}
+
+.left-g {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    column-gap: 4rem;
+}
+
+.main-h {
+    font-weight: 800;
+    line-height: 1;
+}
+
+.main-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.read-more-bt {
+    background-color: var(--softred);
+    border: 0;
+    width: 50%;
+    padding: 2% 4%;
+    font-weight: 600;
+}
+
+.right-g {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    background-color: var(--vdblue);
+    color: var(--offwhite);
+}
+
+.h1-right {
+    color: var(--softorange);
+    font-weight: 800;
+    margin-bottom: 10%;
+}
+
+.h2-right {
+    font-weight: 700;
+    margin-top: 4%;
+
+}
+
+.pright {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.split {
+    border-bottom: 1px var(--offwhite) solid;
+
+}
+
+.g-container {
+    width: 100%;
+    display: flex;
+    padding: 2% 5%;
+}
+
+.sm-img {
+    width: 30%;
+    max-width: 120px;
+    height: auto;
+    object-fit: cover;
+    margin: 1%;
+}
+
+.num {
+    color: var(--softred);
+    font-weight: 800;
+
+}
+
+.tidy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1%;
+}
+
+.h3c {
+    font-weight: 700;
+
+}
+
+.right-part-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
